@@ -22,9 +22,10 @@ html{
 }
 
 body{
-    background: url(image/imgbackground.PNG);
+    background: linear-gradient(#f0f0f0d9, #ffffffd9), url(image/outerpart.png);
     background-size: cover;
     background-position: center no-repeat;
+    background-attachment: fixed;
 }
 /* Header Page */
 
@@ -45,11 +46,13 @@ body{
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
-    background: white;
+    background: linear-gradient(to right, white, #4dccff, #08374A);
 }
 
 .header .logo{
-    margin-top: 5px;
+    margin-top: 7px;
+    position: static;
+    float: left;
 }
 
 .header .navbar{
