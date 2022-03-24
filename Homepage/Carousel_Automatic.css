@@ -1,10 +1,9 @@
 /*Slider section */
 .slider{
-    width: 100%;
-    height: 530px;
+    width: 70%;
+    height: 620px;
     overflow: hidden;
-    margin-top: 4.5rem;
-    
+    margin: auto;
   }
   
   .slides{
@@ -24,7 +23,8 @@
   
   .slide img{
     width: 100%;
-    height: 530px;
+    height: 500px;
+    margin-top: 8rem;
   }
   
   /*css for manual slide navigation */
@@ -33,7 +33,7 @@
     width: 800px;
     display: flex;
     justify-content: center;
-    margin-left: 19.2rem;
+    margin-left: 5.5rem;
 
 }
 
@@ -48,8 +48,8 @@
 }
 
 .manual-btn:not(last-child){
-    margin-right: 20px;
-    margin-bottom: 5px;
+    margin-right: 20.4px;
+    margin-top: 5.7rem;
 }
 
 .manual-btn:hover{
@@ -78,8 +78,8 @@
     display: flex;
     width: 800px;
     justify-content: center;
-    margin-top: 500px;
-    margin-left: 18.6rem;
+    margin-top: 37rem;
+    margin-left: 4.9rem;
 }
 
 .navigation-auto div{
