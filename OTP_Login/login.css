@@ -40,10 +40,11 @@ html{
 }
 
 body{
-    background: url(images/imgbackground.PNG);
+    background-image: linear-gradient,(#f0f0f0d9, #ffffffd9), url(images/SCREEN5.png);
     background-size: cover;
     background-position: center no-repeat;
     background-attachment: fixed;
+    width: 100%;
 }
 
 /* Header Page */
