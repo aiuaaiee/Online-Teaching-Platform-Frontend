@@ -4,10 +4,11 @@
   <head>
     <title>LOGIN PAGE</title>
   </head>
-    <h1>LOGIN PAGE</h1>
     <link rel="stylesheet" href="css.css">
     <form action="mylogin.php" method="POST" >
   <body>
+    <center>
+      <h1>LOGIN PAGE</h1>
         <table>
             <th colspan="2">FORM</th>
             <tr>
@@ -20,6 +21,8 @@
             </tr>
             <th colspan="2"><input type="submit" value="Login" name=""></th>
         </table>
+
+      </center>
     </body>
     </form>
 </html>

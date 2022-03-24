@@ -1,3 +1,16 @@
+
+.edit-logo{
+    width: 2%;
+    height: 2%;
+}
+.phone-logo{
+    width: 25px;
+    height:25px;
+}
+.asd{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px rgba(85, 75, 75, 1);
+}
 .header{
     display: flex;
     align-items: center;
@@ -9,6 +22,10 @@
     top:0; left: 0; right: 0;
     z-index: 1000;
     background: white;
+}
+body { 
+   overflow-x: hidden;
+   background-color: rgb(148, 180, 180);
 }
 
 .header .logo img{
@@ -32,3 +49,9 @@
     padding-bottom: .5rem;
     transition: .3s linear;
 } 
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}

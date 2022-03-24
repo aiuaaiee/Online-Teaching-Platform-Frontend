@@ -24,34 +24,30 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password) {
-                header("location: loginsuccess.html");
+                include_once 'studprofile.php';
                 
             }
             else {
-                    header("location: loginfail.html");
+                    require_once "login.php";
+                    echo "<center><p style='color: red'>*E-mail or Password are not valid!</p></center>";
                 }
     }
         elseif($stmt_result2->num_rows > 0){
             $data = $stmt_result2->fetch_assoc();
             $email = $email;
             if($data['password'] === $password) {
-                
-                $con = new mysqli('localhost', 'root', '', 'main_register');
-                $getnm = "SELECT id, fname, lname FROM teachregs where email = '$email'";
-                $result = $con->query($getnm);
-
-                    // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                        echo "". $row["fname"]. " ". $row["lname"]."";
-                        
+                  include_once 'teachprofile.php';
                 }
-                include_once 'profile.php';
-                
+                else{
+                    require_once "login.php";
+                    echo "<center><p style='color: red'>*E-mail or Password are not valid!</p></center>";
+        }
         }
         else{
-            header("location: loginfail.html");
+             require_once "login.php";
+             echo "<center><p style='color: red'>*E-mail or Password are not valid!</p></center>";
         }
     }
-}
+
     
     ?>
