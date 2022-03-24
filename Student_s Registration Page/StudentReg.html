@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student's Registration</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="image/logo v5.png" width="200" height="200">
+            </a>
+            <nav class="navbar">
+                <a href="../Homepage/homepage.html">Home</a>
+                <a href="../OTP_Login/login.html">Sign In</a>
+                <a href="../Signup/Reg.html">Sign Up</a>
+                <a href="../FAQs pages/FQAsPage/index.html">FAQs</a>
+            </nav>
+        </header>
+
+        <div class="registration-form">
+            <h2>Learner's Registration</h2>
+            <h3>Please fill out the Information</h3>
+            <form action="#" method="post">
+
+                <input type="text" id="1" name="firstname" placeholder="Firstname" required>
+                <input type="text" id="2" name="lastname" placeholder="Lastname" required>
+                <input type="text" id="3" name="emailaddress" placeholder="Email Address" required>
+                <input type="text" id="4" name="contactnumber" placeholder="Contact Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmpassword" placeholder="Confirm Password" required>
+
+                <h3>Additional Information</h3>
+                <p>Upload your 2x2 picture here:</p>
+                <form action="/action_page.php">
+                  <input type="file" id="/" name="/">
+                <p>School ID here:</p>
+                <form action="/action_page.php">
+                  <input type="file" id="/" name="/">
+
+                <label class="container">
+                    <input type="checkbox" required><p>By checking this box, you are agreeing to our terms of service </p>
+                    <span class="checkmark"></span>
+                </label>
+                
+                <button type="submit">Register</button>
+
+            </form>
+        </div>
+
+    </body>
+</html>

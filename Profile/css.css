@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 2%;
+    box-shadow: 0 0 10px rgba(85, 75, 75, .7);
+    height: 4.5rem;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.header .logo img{
+    position: static;
+    float: left;
+}
+
+.header .navbar{
+    margin: 5rem;
+}
+
+.header .navbar a{
+    padding:0 1rem;
+    font-size: 1.2rem;
+    color:var(--blue);
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+    border-bottom: .1rem solid var(--orange);
+    padding-bottom: .5rem;
+    transition: .3s linear;
+} 

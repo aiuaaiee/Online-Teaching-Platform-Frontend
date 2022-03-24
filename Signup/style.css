@@ -1,0 +1,111 @@
+:root{
+    --lightblue:#3ec1f9;
+    --blue:#006A95;
+    --orange: #EE6C4D;
+    --darkblue: #08374A; 
+}
+
+*{
+    font-family: 'Arial', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+
+}
+
+html{
+ 
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: url(image/imgbackground.PNG);
+    background-size: cover;
+    background-position: center no-repeat;
+}
+/* Header Page */
+
+.header_title{
+    margin-right: auto;
+    color: var(--blue);
+    font-weight: normal;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 2%;
+    box-shadow: 0 0 10px rgba(85, 75, 75, .7);
+    height: 4.5rem;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.header .logo{
+    margin-top: 5px;
+}
+
+.header .navbar{
+    margin: 5rem;
+}
+
+.header .navbar a{
+    padding:0 1rem;
+    font-size: 1.2rem;
+    color:var(--blue);
+
+}
+
+.header .navbar a:hover{
+    color: var(--orange);
+    border-bottom: .1rem solid var(--orange);
+    padding-bottom: .5rem;
+    transition: .3s linear;
+}
+
+.infobox{
+    position: relative;
+    max-width: 350px;
+    height: 250px;
+    background: #ffffff;
+    padding: 40px;
+    font-size: 14px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 12rem;
+    box-shadow: 1px 1px 10px rgba(85, 75, 75, .7);
+}
+
+.infobox h1{
+    text-align: center;
+    color: var(--blue);
+    font-size: 2.5rem;
+}
+
+.button {
+	background-color:var(--blue); 
+	color: white; 
+	border-radius: 5px; 
+	height: 37px; 
+	width: 100%; 
+	cursor: pointer;
+	margin: 14px;
+	margin-left: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+	
+}
+
+.button:hover {
+	background-color: #EE6C4D;
+	transition: 0.5s;
+}
