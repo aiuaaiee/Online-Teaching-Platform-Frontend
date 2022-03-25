@@ -54,7 +54,7 @@ body{
 }
 
 .header .logo img{
-    margin-top: 17px;
+    margin-top: 10px;
     position: static;
     float: left;
 }
@@ -241,12 +241,8 @@ button:hover{
 color: var(--orange);
 transition:.5s;
 }
- 
-	
 
-
-
- /* Footer section */
+/* Footer section */
  .footer{  
   background: var(--blue);
 }
