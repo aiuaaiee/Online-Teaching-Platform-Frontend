@@ -1,0 +1,1074 @@
+body {
+    width: 100%;
+}
+.table-he{
+  background-color: rgb(212, 102, 59);
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    grid-template-columns: 0.8fr 3fr  ;
+    grid-template-rows: 0.2fr 1.5fr  ;
+    grid-template-areas: 
+        'nav nav'
+        'sidebar main'
+        'sidebar footer';
+}
+
+/*--Navbar--*/
+nav {
+    background: white;
+    grid-area: nav;
+   width: 100%;
+   
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 2%;
+    box-shadow: 0 0 10px rgba(85, 75, 75, .7);
+    height: 4.5rem;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.navbar h1{
+    margin-right: 25rem;
+    color: #006A95;
+    font-weight: normal;
+}
+
+.nav-link {
+    padding:0 1rem;
+    font-size: 1.2rem;
+    color:#006A95;
+}
+
+main {
+    background: white;
+    grid-area: main;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+/*--Sidebar--*/
+#sidebar {
+    background: #08374a;
+   grid-area: sidebar;
+   width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+
+#btn:checked ~ #sidebar{
+    left: 0;
+
+}
+
+#sidebar .title{
+    visibility: visible;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    line-height: 15px;
+    color: #f2f2f200;
+    height: 45px;
+}
+
+#sidebar .list-items{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+#sidebar .list-items li{
+    padding-left: 30px;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+.active, #sidebar .list-items li:hover{
+    margin-left: -34px;
+    background-color: #ee6d4dbe;
+}
+#sidebar .list-items li:first-child{
+    border-top: none;
+  }
+#sidebar .list-items li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+#sidebar .list-items li a i{
+    margin-right: 20px;
+  }
+
+#sidebar .list-items .icons a{
+    height: 100%;
+    width: 40px;
+    display: block;
+    margin: 0 5px;
+    font-size: 18px;
+    background: #4a4a4a;
+    border-radius: 5px;
+    border: 1px solid #383838;
+    transition: all 0.3s ease;
+}
+
+#sidebar .list-items .icons a:hover{
+    background: #404040;
+}
+.list-items .icons a:first-child{
+    margin-left: 0px;
+}   
+
+.dropdown .btn{
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #ee6d4dbe;
+    color: #fff;
+}
+
+.dropdown-menu{
+    background: #08374a;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: transparent;
+}
+
+.dropdown .fa-user {
+    padding:10px 16px;
+}
+
+/*--Article--*/
+#content1 {
+    background: #fdfffc;
+    align-content: center;
+}
+
+.article  h1{
+    position: relative;
+    left: 283px;
+    padding-left: 30px;
+    margin-top: 30px;
+    font-weight: bolder;
+  }
+  @media only screen and (max-width: 600px) {
+    .article h1 {
+      margin-left: 150px;
+      
+    }
+}
+
+/*--Content--*/
+.container3 {
+    padding-left: 15%;
+   
+}
+  
+  
+  .card{
+    border: 1px solid rgba(128, 128, 128, 0.548);
+    margin-top: 80px;
+  }
+  
+  @media only screen and (max-width: 1083px) {
+    .card-header{
+      height: 120px;
+    }
+  }
+  
+  @media only screen and (min-width: 902px) {
+    .card-header{
+      height: 110px;
+    }
+  }
+  
+  .card-meta{
+    background-color: #006A95;
+    color:#fff;
+  }
+  
+  .card-meta:hover{
+    background-color:#EE6C4D;
+    color:#fff;
+  }
+  
+  .card-title h6{
+    font-weight: bold;
+  }
+
+/*--Search Button(Applications)--*/
+
+#content2 {
+    background: white;
+   
+}
+
+form.search-btn input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 70%;
+    margin-top: 75px;
+    width: 20.5%;
+    background: white;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    form.search-btn input[type=text] {
+      margin-left: 73.3%;
+    }
+  }
+
+  /*--Application List--*/
+#content3 {
+    background: white;
+    align-content: center;
+    padding-left: 100px;
+   
+}
+
+#content4 {
+    background: white;
+    align-content: center;
+    padding-left: 50px;
+}
+
+#content5 {
+    background: white;
+}
+
+#content5 {
+    background: white;
+}
+
+#content7 {
+    background: white;
+}
+
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin-left: -10px;
+    margin-top: 10px;
+    }
+    
+    th, td {
+    padding: 10px; 
+    }
+    
+    th {
+    background-color:#EE6C4D;
+    color: white;
+    }
+    
+    colgroup {
+    width: 200px;
+    }
+
+/*--Confirm/Decline Button--*/
+.confirmed-btn{
+    background-color: #0080FF;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    margin:auto;
+    display:block;
+  }
+
+  .confirm-btn{
+    background-color: white;
+    color: #0080FF;
+    border-radius: 5px;
+    border-color: #38383877;
+    margin:auto;
+    display:block;
+  }
+
+  .decline-btn{
+    background-color: white;
+    color: red;
+    border-radius: 5px;
+    border-color: #38383877;
+}
+
+/*--Instructors List--*/
+table {
+    padding-left: 100px;
+}
+
+#myUser1 table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin-left: 300px;
+    margin-top: 10px;
+    
+    }
+    
+    
+  #myUser1 th, td {
+    padding: 10px; 
+    }
+    
+  #myUser1 th {
+    background-color:#fff;
+    color: black;
+    }
+    
+  #myUser1  colgroup {
+    width: 200px;
+} 
+
+/*--Edit/Delete Button--*/
+#edit-btn{
+    background-color: rgb(6, 112, 6);
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 70px;
+  }
+  
+  #edit-btn:hover{
+    background-color: green;
+  }
+  
+  
+  .delete-btn{
+    background-color: rgb(216, 10, 10);
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+  }
+  
+  .delete-btn:hover{
+    background-color: red;
+}
+
+/*--Search Button(Instructor)--*/
+form.search-btn1 input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 78%;
+    margin-top: 75px;
+    width: 20.5%;
+    background: white;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    form.search-btn1 input[type=text] {
+      margin-left: 70.9%;
+    }
+}
+
+/*--Add Instructor Button--*/
+#myBtn{
+    padding: 8px;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    margin-top: 10px;
+    background-color: white;
+    color: #15769c;
+    border: 2px solid#15769c;
+    border-radius: 5px;
+  }
+  
+  #myBtn:hover{
+    background-color: #08374a;
+    color: white;
+    transition: .2s linear;
+}
+
+/*--Add Instructor Inside--*/
+.instructors-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .instructor {
+    display: none; 
+    position: fixed;
+    z-index: 100; 
+    padding-left: 10px;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .instructors-header {
+    padding: 2px 16px;
+    background-color: #006A95;
+    border-bottom: 1px solid black;
+    height: 45px;
+  }
+  
+  .instructors-body {
+    padding: 2px 16px;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .i-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .i-container input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .i-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .i-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .i-container .submit-btn{
+    text-align: right;
+  }
+  
+  .i-container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .i-container .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .i-container .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .i-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #formFile{
+    margin-top: 6px;
+    padding: 10px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+  
+  .instructors-footer {
+    padding: 2px 16px;
+    background-color: #006A95;
+    border-top: 1px solid black;
+    height: 45px;
+  }
+
+  /* Edit Instructor */
+.editinstructor {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow-y: scroll; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 80px;
+  }
+  
+  .instructor-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  .instructor-header {
+    padding: 2px 16px;
+    background-color: #006A95;
+    color: white;
+    height: 45px;
+  }
+  
+  .instructor-body {padding: 2px 16px;}
+  
+  .instructor-footer {
+    padding: 2px 16px;
+    background-color: #006A95;
+    color: white;
+    height: 45px;
+  }
+  
+  .close1 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .instructor-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .instructor-container input[type=button][value=Cancel] {
+    background-color: #868d8f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 23%;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .instructor-container input[type=button][value=Cancel] {
+      width: 30%;
+    }
+  }
+  
+  .instructor-container input[type=button][value=Save] {
+    background-color: #136a8d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 23%;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .instructor-container input[type=button][value=Save] {
+      width: 30%;
+    }
+  }
+  
+  
+  
+  .instructor-container input[type=button]:hover {
+    background-color: #535f61;
+  }
+  
+  .instructor-container input[type=button][value=Save]:hover {
+    background-color: #0c536e;
+  }
+  
+  .instructor-container .cancel-btn, .save-btn{
+    display: inline-block;
+    top: 10%;
+    margin-left: 50%;
+    width: 500px;
+  }
+  
+  .instructor-container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .instructor-container .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .instructor-container .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .instructor-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*--Learners List--*/
+  #myUser2 table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin-left: 300px;
+    margin-top: 10px;
+    }
+    
+  #myUser2 th, td {
+    padding: 10px; 
+    }
+    
+  #myUser2 th {
+    background-color:#fff;
+    color: black;
+    }
+    
+  #myUser2  colgroup {
+    width: 200px;
+} 
+
+/* Edit Learner */
+.editlearner {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow-y: scroll; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 80px;
+  }
+  
+  .learner-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  .learner-header {
+    padding: 2px 16px;
+    background-color: #006A95;
+    color: white;
+    height: 45px;
+  }
+  
+  .learner-body {padding: 2px 16px;}
+  
+  .learner-footer {
+    padding: 2px 16px;
+    background-color: #006A95;
+    color: white;
+    height: 45px;
+  }
+  
+  .close2 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .learner-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .learner-container input[type=button][value=Cancel] {
+    background-color: #868d8f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 23%;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .learner-container input[type=button][value=Cancel] {
+      width: 30%;
+    }
+  }
+  
+  .learner-container input[type=button][value=Save] {
+    background-color: #136a8d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 23%;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .learner-container input[type=button][value=Save] {
+      width: 30%;
+    }
+  }
+  
+  .learner-container input[type=button]:hover {
+    background-color: #535f61;
+  }
+  
+  .learner-container input[type=button][value=Save]:hover {
+    background-color: #0c536e;
+  }
+  
+  .learner-container .cancel-btn, .save-btn{
+    display: inline-block;
+    top: 10%;
+    margin-left: 50%;
+    width: 500px;
+  }
+  
+  .learner-container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .learner-container .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .learner-container .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .learner-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*--Add Learner Inside--*/
+.learners-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .learner {
+    display: none; 
+    position: fixed;
+    z-index: 100; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .learners-header {
+    padding: 2px 16px;
+    background-color: #006A95;
+    border-bottom: 1px solid black;
+    height: 45px;
+  }
+  
+  .learners-body {
+    padding: 2px 16px;
+  }
+  
+  .l-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  .l-container input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+  }
+  
+  .l-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .l-container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .l-container .submit-btn1{
+    text-align: right;
+  }
+  
+  .l-container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .l-container .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .l-container .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .l-container .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #formFile1{
+    margin-top: 6px;
+    padding: 10px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+  
+  .learners-footer {
+    padding: 2px 16px;
+    background-color: #006A95;
+    border-top: 1px solid black;
+    height: 45px;
+}
+
+/*--Add Learner Button--*/
+#learnerBtn{
+    padding: 8px;
+    position: relative;
+    float: right;
+    margin-right: 2%;
+    margin-top: 10px;
+    background-color: white;
+    color: #15769c;
+    border: 2px solid#15769c;
+    border-radius: 5px;
+  }
+  
+  #learnerBtn:hover{
+    background-color: #08374a;
+    color: white;
+    transition: .2s linear;
+}
+
+/*--Search Button(Learner)--*/
+form.search-btn2 input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-left: 78%;
+    margin-top: 75px;
+    width: 20.5%;
+    background: white;
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    form.search-btn2 input[type=text] {
+      margin-left: 70.9%;
+    }
+}
+
+/*--Delete Button--*/
+.cancelbtn, .deletebtn {
+    float: center;
+    width: 30%;
+    margin-top: 20px;
+  }
+  
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .cancelbtn:hover{
+    background-color: gray;
+  }
+  
+  .deletebtn {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .deletebtn:hover{
+    background-color: red;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 50px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 50% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.2s
+  }
+  
+  .m-container{
+      padding: 40px;
+      text-align: center;
+      
+  }
+  
+  .closebtn {
+    float: right;
+    margin-top: -45px;
+    margin-right: -20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .closebtn:hover,
+  .closebtn:focus {
+    color: #fa1100;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+    }
+  }
+  
+
+footer {
+    
+    grid-area: footer;
+    width: 100%;
+}
+
+
