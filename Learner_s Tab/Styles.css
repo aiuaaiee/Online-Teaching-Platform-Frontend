@@ -5,11 +5,10 @@
 
 
 :root{
-    --lightblue:#3ec1f9;
-    --blue:#006A95;
-    --orange: #EE6C4D;
-    --darkblue: #08374A;
-    
+  --lightblue:#3ec1f9;
+  --blue:#006A95;
+  --orange: #EE6C4D;
+  --darkblue: #08374A; 
 }
 
 *{
@@ -28,8 +27,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-	background: url(images/imgbackground update 2.png);
-	background-size:cover;
+	background:;
+	background-size: cover;
 	background-attachment:fixed;
 }
 	
@@ -84,13 +83,13 @@ body{
 .wrapper{
   height: 100%;
   width: 300px;
-  position: absolute;
+  position: fixed;
 }
 .wrapper .menu-btn{
   position: absolute;
   left: 0px;
   top: -25px;
-  background: #08374a8c;
+  background: var(--darkblue);
   color: #fff;
   height: 45px;
   width: 45px;
@@ -279,24 +278,23 @@ footer{
   background: #006A95;
   height: auto;
   width: 100vw;
-  padding-top: 20px;
   color: #fff;
-  border-top: 3px solid #5daccc;
 }
 .footer-content{
   display: flex;
   flex-direction: column;
+  padding: 2rem 3rem 1rem 3rem;
 }
 .footer-content h1{
-  font-weight: 500;
-  line-height: 3rem;
-  margin-left: 100px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
-.footer-content p{
+.footer-content p, a{ 
   max-width: 500px;
   line-height: 28px;
-  font-size: 14px;
-  margin-left: 100px;
+  font-size: 1rem;
   color: #ffffff;
 }
 .socials{
@@ -308,18 +306,16 @@ footer{
 .socials li{
   position: relative;
   margin: 0 10px;
-  left: 50px;
+  left: 20px;
   top: 30px;
 }
 .socials a{
   text-decoration: none;
   color: #EE6C4D;
-  border: 1.1px solid #EE6C4D;
-  padding: 5px;
-  border-radius: 50%;
+  padding: 0 5px;
 }
 .socials a i{
-  font-size: 1.1rem;
+  font-size: 25px;
   width: 20px;
   transition: color .4s ease;
 }

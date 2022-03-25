@@ -405,7 +405,7 @@ body{
   background: var(--blue);
 }
 
-.container-fluid{
+.myfooter{
   width: 100%;
   margin: auto;
   display: flex;
@@ -413,14 +413,14 @@ body{
   padding: 2rem 3rem;
 }
 
-.container-fluid h2{
+.myfooter h2{
   color: white;
   margin-bottom: 10px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-fluid h2 span{
+.myfooter h2 span{
   width: 58%;
   background: var(--orange);
   display: block;
@@ -444,14 +444,14 @@ body{
   margin-top: 5px;
 }
 
-.container-fluid p, a{
+.myfooter p, a{
   font-size: 1rem;
   color: rgb(247, 247, 247);
   padding-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-fluid a:hover{
+.myfooter a:hover{
   transition: 0.5s;
   color: var(--orange);
 }
@@ -478,7 +478,6 @@ body{
   color: var(--orange);
   font-size: 25px;
   padding: 0 10px;
-  border-radius: 5px;
   float: left;
 }
 
