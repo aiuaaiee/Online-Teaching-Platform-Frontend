@@ -8,15 +8,18 @@
 
 *{
   font-family: 'Arial', sans-serif;
+  margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
 }
 
 body {
-	background: url('Image/imgbackground.PNG') no-repeat;
+	background: linear-gradient(#f0f0f0d9, #ffffffd9), url('Image/OUTER PARTS BG.PNG');
 	background-size: cover;
-  background-position: center;
+  background-position: center no-repeat;
   background-attachment: fixed;
-	color: #fff;
-  border-radius: 10px;
+  width: 100%;
 }
 
 .header{
@@ -25,15 +28,16 @@ body {
     justify-content: space-between;
     padding: 1.5rem 2%;
     box-shadow: 0 0 10px rgba(85, 75, 75, .7);
-    height: 1.5rem;
+    height: 4.5rem;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
-    background: white;
+    background: linear-gradient(to right, white, #4dccff, #08374A);
 }
 
 .header .logo{
-    margin-top: 5px;
+  position: static;
+  float: left;
 }
 
 .header .navbar{
@@ -43,15 +47,15 @@ body {
 .header .navbar a{
     padding:0 1rem;
     font-size: 1.2rem;
-    color: #006A95;
+    color: white;
     text-decoration: none;
 }
 
 .header .navbar a:hover{
-    color: #EE6C4D;
-    border-bottom: .1rem solid #EE6C4D;
-    padding-bottom: .5rem;
-    transition: .3s linear;
+  color: var(--orange);
+  border-bottom: .1rem solid var(--orange);
+  padding-bottom: .5rem;
+  transition: .3s linear;
 } 
 
 .header p{
@@ -64,28 +68,29 @@ div{
     width: 600px;
     height: fit-content;
     margin: auto;
-    padding: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
     justify-content: center;
     position: relative;
-    margin-top: 100px;
     border: solid 1px grey;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(85, 75, 75, .7);
 }
 
-/* .registration-form {
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
-
-
 .registration-form h2 {
-	font-size: 40px;
-	color: #006A95;
 	text-align: center;
-  margin-top: -15px
+  color:var(--blue);
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 2.5rem;
+}
+
+.registration-form h2 span{
+  width: 100%;
+  background: var(--blue);
+  display: block;
+  height: 4px;
+  margin-top: 5px;
 }
 
 .registration-form h3 {
@@ -106,13 +111,12 @@ div{
 }
 
 .registration-form input {
-	font-size: 16px;
-	padding: 10px 10px;
-	margin: 5px 0;
-	width: 95%;
-	border-radius: 3px;
-	outline: none;
+	width: 100%;
   border: solid 1px grey;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 15px;
+  padding: 5px;
   box-shadow: 0 1px 4px rgba(85, 75, 75, .7);
 }
 
@@ -248,8 +252,4 @@ div{
 .container p{
   font-weight: 400;
   color: #1f1f1f;
-}
-
-.registration-form button:hover {
-
 }
