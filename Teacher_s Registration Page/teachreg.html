@@ -53,11 +53,6 @@
                 </select>
                 <br><br>
 
-            <span class="eye" onclick="myFunction()">
-                <i id="hide1" class="fas fa-eye-slash"></i>
-                <i id="hide2" class="fas fa-eye"></i>
-            </span>
-
             <h3>Additional Information</h3><br>
             <p>Upload your resume here:</p><br>
             <form action="/">
@@ -77,26 +72,6 @@
 
                 </form>
     </div>
-
-    <!-- JS  -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myInput");
-            var y = document.getElementById("hide1");
-            var z = document.getElementById("hide2");
-            if (x.type === 'password') {
-                x.type = "text";
-                y.style.display = "block";
-                z.style.display = "none";
-            }
-            else {
-                x.type = "password";
-                y.style.display = "none";
-                z.style.display = "block";
-            }
-        }
-
-    </script>
 
 </body>
 
