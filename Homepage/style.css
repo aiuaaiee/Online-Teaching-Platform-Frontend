@@ -395,7 +395,10 @@ body{
   margin: 0 20px;
 }
 
-
+.virtual p, 
+.dashboard p{
+  font-size: 20px;
+}
 
 /* Footer section */
 .footer{  
