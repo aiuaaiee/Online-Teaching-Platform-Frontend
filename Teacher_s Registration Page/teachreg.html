@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Registration</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="Image/logo update 2.png" width="60%">
+        </a>
+        <nav class="navbar">
+            <a href="../Homepage/homepage.html">Home</a>
+            <a href="../OTP_Login/login.html">Sign In</a>
+            <a href="../Signup/Reg.html">Sign Up</a>
+            <a href="../FAQs pages/FQAsPage/index.html">FAQs</a>
+        </nav>
+    </header>
+
+    <br> <br>
+    <br> <br>
+    <br> <br>
+
+    <div class="registration-form">
+        <h2>Instructor's Registration<span></span></h2><br>
+        <h3>Please fill out the Information</h3><br>
+        <form action="#" method="post">
+
+            <input type="text" id="1" name="firstname" placeholder="Firstname" required><br><br>
+            <input type="text" id="2" name="lastname" placeholder="Middlename" required><br><br>
+            <input type="text" id="3" name="lastname" placeholder="Lastname" required><br><br>
+            <input type="text" id="4" name="emailaddress" placeholder="Email Address" required><br><br>
+            <input type="text" id="5" name="contactnumber" placeholder="Contact Number" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="password" name="confirmpassword" placeholder="Confirm Password" id="myInput" required><br><br>
+
+            <form action="/">
+                <label for="subjects">Choose a subject to teach:</label><br><br>
+                <select name="subjects" id="subjects">
+                    <option value="select">Select a subject</option>
+                    <option value="math">Mathematics</option>
+                    <option value="science">Science</option>
+                    <option value="english">English</option>
+                    <option value="fil">Filipino</option>
+                    <option value="his">History</option>
+                </select>
+                <br><br>
+            </form>
+
+            <span class="eye" onclick="myFunction()">
+                <i id="hide1" class="fas fa-eye-slash"></i>
+                <i id="hide2" class="fas fa-eye"></i>
+            </span>
+
+            <h3>Additional Information</h3><br>
+            <p>Upload your resume here:</p><br>
+            <form action="/">
+                <input type="file" id="/" name="/"><br><br>
+                <p>Upload your teacher's license here:</p><br>
+                <form action="/">
+                    <input type="file" id="/" name="/"><br><br>
+
+                    <label class="container">
+                        <input type="checkbox" required>
+                        <p>By checking this box, you are agreeing to our terms of service </p>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <button type="submit">Register</button>
+
+
+                </form>
+    </div>
+
+    <!-- JS  -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+            if (x.type === 'password') {
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
