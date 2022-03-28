@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/32e61978bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="Carousel_Automatic.css">
+      
+    </head>
+</head>
+<body>
+
+     <!-- header section starts  -->
+
+     <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo update 2.png" width="60%">
+        </a>
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="../OTP_Login/login.html">Sign in</a>
+            <a href="../Signup/Reg.html">Sign up</a>
+            <a href="../FQAsPage/index.html">FAQs</a>
+        </nav>
+    </header>
+
+
+<!-- imagae slider start -->
+<section class="slider">
+    <div class="slides">
+        <!-- radio buttons start -->
+        <input type = "radio" name = "radio-btn" id = "radio1">
+        <input type = "radio" name = "radio-btn" id = "radio2">
+        <input type = "radio" name = "radio-btn" id = "radio3">
+        <input type = "radio" name = "radio-btn" id = "radio4">
+        <!-- radio buttons end -->
+
+        <!-- slide images start -->
+        <div class = "slide first">
+            <img src = "images/carousel1.png" alt="">
+        </div>
+        <div class = "slide">
+            <img src = "images/carousel2.png" alt="">
+        </div>
+        <div class = "slide">
+            <img src = "images/carousel3.png" alt="">
+        </div>
+        <div class = "slide">
+            <img src = "images/carousel4.png" alt="">
+        </div>
+        <!-- slide images end -->
+
+        <!-- automatic navigation start -->
+        <div class = "navigation-auto">
+            <div class = "auto-btn1"></div>
+            <div class = "auto-btn2"></div>
+            <div class = "auto-btn3"></div>
+            <div class = "auto-btn4"></div>
+        </div>
+        <!-- automatic navigation end -->
+    </div>
+    <!-- manual navigation start -->
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!-- manual navigation end -->
+</section>
+<!-- image slider end -->
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+    document.getElementById('radio'+counter).checked = true;
+    counter++;
+    if(counter > 4){
+        counter = 1;
+    }
+}, 5000);
+</script>
+
+
+
+<!-- small container section starts -->
+
+<section class="small-container reveal">
+    <div class="row1">
+    <div class="col-1">
+        <h1 class="title">Together we achieve<br> something extraordinary</h1>
+        <p><span> Learner's Avenue </span> guarantees that adequately managed learning brings the best
+            out of each person, allowing them to reach much more than working alone. It’s
+            also about recognizing every individual’s strength, embracing them, and
+            constantly pulling each other up. </p>  
+        
+    </div>
+    <div class="col-2">
+        <img src="images/Teacher.jpg" alt="">
+    </div>
+    </div>
+
+    <section class="small-container2 reveal">
+        <div class="row2">
+        
+            <div class="col-1">
+                <img src="images/student1.png" alt="">
+            </div>
+        
+            <div class="col-2 ">
+                <h1 class="title">“Educating Today's Learners to Become Tomorrow's Leaders”</h1>
+                <p>We assure that Learners Avenue's influential Educators have a strong guiding
+                    power — a dream, a vision, or a moral purpose. This vision drives them to lead
+                    Learners to be a part of something bigger than themselves. It encourages them to
+                    create a goal to make the world a better place.
+                     </p>       
+            </div>
+        
+        </section>
+
+   
+<!---- container 2 section start---->
+<section>
+<div class="banner reveal">
+<div class="container2 reveal">
+<div class="banner-content reveal">
+	<h1>About Learning <br>Management System</h1>
+	<p>Learner's Avenue is a digital learning environment. It can let learners and educators
+        collaborate on comprehending no matter where education occurs. It is a user-friendly
+        online classroom that provides unique learning experiences to everyone in the
+        comfort of their own homes. It is also committed to promoting high-quality digital
+        teaching and learning experiences that reach and engage today's learners — anyone,
+        anywhere, at any time.
+	</p>
+			 </div>
+			 </div>
+			 </div>
+    
+</section>
+
+<!-----container3 section start---->
+<section class="container3 reveal">
+<div class="row3">
+<div class="col-3">
+    <img src="images/MISSION-LEARNER_S AVENUE.png" height="80" width="80">
+<div>
+<h2>Mission</h2>
+<p>Contribute to improving high-quality online learning education programs by using technology 
+    to promote education anytime, which provides learners with an excellent and comprehensive 
+    learning experience. Educators will profit while assisting learners in attaining the necessary 
+    information, abilities, and characteristics for professional readiness. To allow everyone
+    to attain higher success in life.</p>
+
+</div>
+</div>
+	<div class="col-3">
+<img src="images/VISION-LEARNER_S AVENUE.png" height="80" width="80">
+<div class="vision">
+<h2>Vision</h2>
+<p>To be one of the most distinctively quality and accessible education
+    providers online.</p>
+</div>
+</div>
+</div>
+</section>
+
+
+<!--corevalues section starts -->
+<section class="corevalues reveal">
+    <div class="title">
+        <img src="images/CORE VALUE-LEARNER_S AVENUE.png" height="100" width="100">
+    <h1>Core Values</h1>
+    </div>
+    <div class="content1">
+    <div class="excellence">
+        <img src="images/EXCELLENCE-LEARNER_S AVENUE.png" height="80" width="80">
+        <h3> Excellence</h3>
+        <p>In all our academic endeavors, we aim for greatness. We are
+            dedicated to bringing new ideas to our education, research, 
+            and technology. We intend to remain committed to our aim 
+            of providing value. We commit to constant self-improvement 
+            to attain excellence in all that wedo. </p>
+    </div>
+
+    <div class="ethics">
+        <img src="images/ETHICS AND DIGNITY-LEARNER_S AVENUE.png" height="80" width="80">
+        <h3>Ethics and Dignity</h3>
+        <p>We are dedicated to upholding the most significant
+            levels of honesty, fairness, respect, professional and intellectual 
+            ethics. We expect all our behavior to be grounded in integrity, mutual
+             respect, and decency and guided by the highest ethical standards.</p>
+    </div>
+
+    
+</div> 
+
+
+<div class="content2">
+    <div class="service">
+        <img src="images/SERVICE-LEARNER_S AVENUE.png" height="80" width="80"> 
+        <h3>Service</h3>
+        <p>We are committed to serving not just needs of the students and teachers 
+            in our virtual communities, as well as the needs of our colleagues. </p>
+    </div>
+
+    <div class="diversity">
+        <img src="images/DIVERSITY-LEARNER_S AVENUE.png" height="80" width="80">
+        <h3> Diversity</h3>
+        <p>We embrace human diversity in all forms and recognize its importance in 
+            maintaining a vibrant learning environment. We are committed to creating
+             a welcoming, friendly, and safe community.</p>
+    </div>
+</div>
+
+    <div class="content3">
+        <div class="studentfocus">
+            <img src="images/STUDENT FOCUS-LEARNER_S AVENUE.png" height="80" width="80">
+            <h3> Student Focus</h3>
+            <p>We are dedicated to supporting lifelong learning and leadership
+                development to encourage the professional and personal growth
+                of all learners and educators. These are the primary factors of 
+                academic decisions and activity.
+                </p>
+    </div>
+    </div>
+    
+</section>
+
+<!-- Features section starts -->
+<section class="features reveal">
+    
+    <h1></i>FEATURES</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/22.png" alt="">
+            <h3>VIRTUAL CLASSROOM</h3>
+            <div class="virtual">
+            <p>Uses video conferencing to create a collaborative environment.</p>
+        </div>
+        </div>
+
+        <div class="box">
+            <img src="images/17.png" alt="">
+            <h3>ASSESSMENT FEEDBACK</h3>
+            <p>Assessment feedback is both to educators and learners. Learners can give reviews and
+                ratings to the Educators of their enrolled course. It will also guide learners to choose
+                the most satisfactory Educator they want to register.</p>
+        </div>
+
+        <div class="box">
+            <img src="images/19.png" alt="">
+            <h3>DASHBOARD</h3>
+            <div class="dashboard">
+            <p>A panel that shows to both students and teachers: threir profile, progress, notifications
+             courses and so on.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer section starts  -->
+<section class="footer"> 
+    <div class="myfooter"> 
+        <div class="about-us">
+            <h2> Online Teaching Platform<span></span></h2>
+            <p>At Learner’s Avenue, we believe that there is a better way to earn and
+                learn new<br> things at home. A more relaxed and fitting on the learners
+                learning styles that will help them grow to be professional.</p>   
+        </div>
+    
+        <div class="contacts">
+            <h2>Contacts <span></span></h2>
+            <p>+63 912 345 6789</p>
+            <a href="#">www.onlinelearningplatform.com</a>
+        </div>
+    
+        <div class="address">
+            <h2>Company Address <span></span></h2>
+            <p>Intertek Building 2310 Chino Roces Avenue (Pasong Tamo
+                Extension) 1200 </p>
+        </div>
+            
+        </div>
+  
+    </section>
+    <!-- footer section ends  -->
+    
+    <!-- footer bottom starts  -->
+    <section class="footer-bottom">
+        <div class="small-container">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-google-plus-g"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <p>Copyright 2022 All Rights Reserved</p>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
+                else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
