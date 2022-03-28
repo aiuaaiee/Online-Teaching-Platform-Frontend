@@ -404,6 +404,7 @@ p{
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem;
+  margin-left: 1.5rem;
 }
 
 .myfooter h2{
@@ -414,23 +415,6 @@ p{
 }
 
 .myfooter h2 span{
-  width: 58%;
-  background: var(--orange);
-  display: block;
-  height: 4px;
-  margin-top: 5px;
-}
-
-
-.contacts h2 span{
-  width: 45%;
-  background: var(--orange);
-  display: block;
-  height: 4px;
-  margin-top: 5px;
-}
-
-.address h2 span{
   width: 45%;
   background: var(--orange);
   display: block;
@@ -452,28 +436,37 @@ p{
 }
 
 .address{
-  margin-left: 40px;
+  margin-left: 90px;
+
 }
 
+.contacts,
+.contacts p,
+.contacts a{
+  text-align: center;
+  margin-left: 20px;
+}
 
+.contacts span{
+  margin: auto;
+}
 /* Footer-bottom section */
 .footer-bottom{
   display: block;
   background: var(--darkblue);
   padding-top: 2rem;
-  padding-bottom: 3rem; 
+  padding-bottom: 2rem; 
 }
 
 .footer-bottom .small-container{
   font-size: 18px;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-right: 4rem;
 }
 .footer-bottom a{
   color: var(--orange);
   font-size: 25px;
   padding: 0 10px;
-  float: left;
 }
 
 .footer-bottom p{
