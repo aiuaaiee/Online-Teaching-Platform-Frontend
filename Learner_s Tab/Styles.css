@@ -27,17 +27,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-<<<<<<< HEAD
-	background:;
-	background-size: cover;
-	background-attachment:fixed;
-=======
+
 	background: url(images/bg.png);
 	background-position: center;
   background-repeat:no-repeat;
 	background-size:cover;
   width: 100%;
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 	
 
@@ -280,88 +275,27 @@ color: var(--orange);
 transition:.5s;
 }
 
-<<<<<<< HEAD
-/* Footer  */
-footer{
-  position: bottom;
-  bottom:370px;
-  background: #006A95;
-  height: auto;
-  width: 100vw;
-  color: #fff;
-=======
 /* Footer section */
 .footer{  
   background: var(--blue);
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 
-.container-fluid{
+.myfooter{
   width: 100%;
-  margin: auto;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-  padding: 2rem 3rem 1rem 3rem;
-}
-.footer-content h1{
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.footer-content p, a{ 
-  max-width: 500px;
-  line-height: 28px;
-  font-size: 1rem;
-  color: #ffffff;
-=======
   justify-content: space-between;
   padding: 2rem 3rem;
+  margin-left: 1.5rem;
 }
 
-.container-fluid h2{
+.myfooter h2{
   color: white;
   margin-bottom: 10px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-fluid h2 span{
-  width: 58%;
-  background: var(--orange);
-  display: block;
-  height: 4px;
-  margin-top: 5px;
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
-}
-
-.contacts h2 span{
-  width: 45%;
-  background: var(--orange);
-  display: block;
-  height: 4px;
-  margin-top: 5px;
-}
-<<<<<<< HEAD
-.socials li{
-  position: relative;
-  margin: 0 10px;
-  left: 20px;
-  top: 30px;
-}
-.socials a{
-  text-decoration: none;
-  color: #EE6C4D;
-  padding: 0 5px;
-}
-.socials a i{
-  font-size: 25px;
-  width: 20px;
-  transition: color .4s ease;
-=======
-
-.address h2 span{
+.myfooter h2 span{
   width: 45%;
   background: var(--orange);
   display: block;
@@ -369,58 +303,56 @@ footer{
   margin-top: 5px;
 }
 
-.container-fluid p, a{
+.myfooter p, a{
   font-size: 1rem;
   color: rgb(247, 247, 247);
   padding-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
-.container-fluid a:hover{
+.myfooter a:hover{
   transition: 0.5s;
   color: var(--orange);
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 
 .address{
-  margin-left: 40px;
+  margin-left: 90px;
+
 }
 
+.contacts,
+.contacts p,
+.contacts a{
+  text-align: center;
+  margin-left: 20px;
+}
 
+.contacts span{
+  margin: auto;
+}
 /* Footer-bottom section */
 .footer-bottom{
   display: block;
   background: var(--darkblue);
   padding-top: 2rem;
-  padding-bottom: 3rem; 
+  padding-bottom: 2rem; 
 }
 
 .footer-bottom .small-container{
   font-size: 18px;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-right: 4rem;
 }
 .footer-bottom a{
   color: var(--orange);
   font-size: 25px;
   padding: 0 10px;
-  border-radius: 5px;
-  float: left;
 }
 
 .footer-bottom p{
   float: right;
   color: white;
   font-size: 18px;
-}
-.reveal{
-    position: relative;
-    transform:translateY(150px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-
-.reveal.active{
-    transform:translateY(0px);
-    opacity: 1;
+  font-family: Arial, Helvetica, sans-serif;
 }
