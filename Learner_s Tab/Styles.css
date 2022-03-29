@@ -27,17 +27,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-<<<<<<< HEAD
-	background:;
-	background-size: cover;
-	background-attachment:fixed;
-=======
-	background: url(images/bg.png);
-	background-position: center;
+  background:url(images/background.png);
+  background-position: center;
   background-repeat:no-repeat;
-	background-size:cover;
+  background-size:cover;
   width: 100%;
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
+
 }
 	
 
@@ -210,112 +205,59 @@ body{
 
 /*Intro*/
 .Intro{
-  color: white;
-  position: relative;
-  left: 285px;
-  height: 100px;
-  width: 73%;
-  background: var(--orange);
-  border-radius: 10px;
-  padding-left: 20px;
-  padding-top: 20px;
-}
-
-.Intro h3{
-  font-weight: 300;
-  font-family: 'raleway';
-  font-size: 25px;
-}
+    color: white;
+    position: relative;
+    left: 300px;
+    height: 150px;
+    width: 70%;
+    background: #f5795a;
+    border-radius: 10px;
+    padding-left: 35px;
+    padding-top: 20px;
+  }
   
-.h2{
-  color: white;
-  position: relative;
-  left: 285px;
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-
 /* cards*/
 .cards{
-  height: 220px;
-	width:22%;
-	position:relative;
-	left:268px;
-	margin:20px 20px;
-	background-color:rgb(255, 255, 255);
-  border: 1px solid #383838;
-  display:inline-block;
+  width:150px;
+  position:relative;
+  left:350px;
+  margin:40px;
+  background-color:white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 10px black;
+display:inline-block;
 }
 .images img{
-	width:100%;
-	position:center;
-  height: 120px;
+  width:100%;
+  position:center;
 }
-
-.titles .btn{
-	text-align:center;
-
+.titles{
+  text-align:center;
+   color: var(--blue);
 }
-.titles h1{
-  text-align: left;
-  color: var(--darkblue);
-  font-size: 20px;
-  margin-left: 5px;
-}
-
 button{
-	margin-top:30px;
-	margin-bottom:30px;
-	background-color:white;
-	border:1px solid rgb(255, 255, 255);
-	padding:5px;
-	border-radius:5px;
-	cursor:pointer;
-  color: #EE6C4D;
-  font-size: medium;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:white;
+  border:1px solid black;
+  padding:5px;
+  border-radius:5px;
+  cursor:pointer;
 }
 button:hover{
 color: var(--orange);
 transition:.5s;
 }
 
-<<<<<<< HEAD
-/* Footer  */
-footer{
-  position: bottom;
-  bottom:370px;
-  background: #006A95;
-  height: auto;
-  width: 100vw;
-  color: #fff;
-=======
 /* Footer section */
-.footer{  
+ .footer{  
   background: var(--blue);
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 
 .container-fluid{
   width: 100%;
   margin: auto;
   display: flex;
-<<<<<<< HEAD
-  flex-direction: column;
-  padding: 2rem 3rem 1rem 3rem;
-}
-.footer-content h1{
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.footer-content p, a{ 
-  max-width: 500px;
-  line-height: 28px;
-  font-size: 1rem;
-  color: #ffffff;
-=======
   justify-content: space-between;
   padding: 2rem 3rem;
 }
@@ -333,7 +275,6 @@ footer{
   display: block;
   height: 4px;
   margin-top: 5px;
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 
 .contacts h2 span{
@@ -343,23 +284,6 @@ footer{
   height: 4px;
   margin-top: 5px;
 }
-<<<<<<< HEAD
-.socials li{
-  position: relative;
-  margin: 0 10px;
-  left: 20px;
-  top: 30px;
-}
-.socials a{
-  text-decoration: none;
-  color: #EE6C4D;
-  padding: 0 5px;
-}
-.socials a i{
-  font-size: 25px;
-  width: 20px;
-  transition: color .4s ease;
-=======
 
 .address h2 span{
   width: 45%;
@@ -379,7 +303,6 @@ footer{
 .container-fluid a:hover{
   transition: 0.5s;
   color: var(--orange);
->>>>>>> e27093d29e84193cc37a142f0fbbfac1bd2cb85d
 }
 
 .address{
