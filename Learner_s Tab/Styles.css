@@ -27,8 +27,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-
-	background: url(images/bg.png);
+	background:url(images/background.png);
 	background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
