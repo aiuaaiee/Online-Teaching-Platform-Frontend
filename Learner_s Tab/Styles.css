@@ -31,7 +31,7 @@ body{
 	background: url(images/bg.png);
 	background-position: center;
   background-repeat:no-repeat;
-	background-size:cover;
+  background-size:cover;
   width: 100%;
 }
 	
@@ -276,7 +276,7 @@ transition:.5s;
 }
 
 /* Footer section */
-.footer{  
+ .footer{  
   background: var(--blue);
 }
 

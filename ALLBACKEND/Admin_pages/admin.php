@@ -52,7 +52,19 @@
           <div class="card">
             <span class="card-header">
               <span class="card-title">
-                <h1>3</h1>
+
+                <?php
+
+                include 'dbcon.php';
+
+                $query = "SELECT id FROM teachregs ORDER BY id";
+                $query_run = mysqli_query($mysqli, $query);
+
+                $row = mysqli_num_rows($query_run);
+
+                echo '<h1>' . $row . '</h1>';
+                ?>
+                
                 <h6>Number of Instructors</h6>
               </span>
             </span>
@@ -66,7 +78,19 @@
                 <div class="card">
                 <span class="card-header">
                     <span class="card-title">
-                    <h1>3</h1>
+
+                    <?php
+
+                    include 'dbcon.php';
+
+                    $query = "SELECT id FROM teachregs ORDER BY id";
+                    $query_run = mysqli_query($mysqli, $query);
+
+                    $row = mysqli_num_rows($query_run);
+
+                    echo '<h1>' . $row . '</h1>';
+                    ?>
+
                     <h6>Number of Learners</h6>
                     </span>
                 </span>
